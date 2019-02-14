@@ -1,9 +1,0 @@
----
-
-- hosts: ubuntu
-  become: yes
-
-  tasks:
-   -name: uninstall
-    apt: name=apache2 state=absent
-   
