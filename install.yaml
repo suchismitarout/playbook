@@ -1,9 +1,9 @@
 ---
 
-- hosts: ubuntu
+- hosts: ubuntu1
   become: yes
 
   tasks:
-   -name: install 
-    apt: name=apache2 state=latest
-    when: ansible_os_family == "Debian"
+   - name: install 
+     apt: name=apache2 state=latest
+     when: ansible_os_family == "Debian"
