@@ -1,0 +1,9 @@
+---
+- hosts: ubuntu1
+  become: yes
+  tasks:
+   - name: enable and start docker
+     service: 
+       name: docker 
+       enabled: true 
+       state: started
